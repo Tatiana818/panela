@@ -1,96 +1,199 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Descubre la Panela ROSSE</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            padding: 20px;
-            background-color: #f8f3e9;
-        }
-        .container {
-            max-width: 800px;
-            margin: auto;
-            background: white;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-        h1 { color: #8b5a2b; }
-        h2 { color: #d2691e; }
-        a {
-            display: inline-block;
-            margin: 10px 0;
-            color: #fff;
-            background: #d2691e;
-            padding: 10px 20px;
-            text-decoration: none;
-            border-radius: 5px;
-        }
-        .image-container img {
-            width: 100%;
-            border-radius: 10px;
-        }
-        .recipe {
-            text-align: left;
-            margin-top: 20px;
-            padding: 15px;
-            background: #f9ede2;
-            border-radius: 8px;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Descubre la Panela - ROSSE</title>
+  <script type="module" src="https://unpkg.com/@google/model-viewer"></script>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      text-align: center;
+      padding: 20px;
+      background-color: #f8f3e9;
+      color: #333;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: auto;
+      background: #fffdf9;
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+      color: #8b5a2b;
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+
+    h2 {
+      color: #d2691e;
+      font-size: 1.8rem;
+      margin-top: 30px;
+    }
+
+    h3 {
+      color: #a0522d;
+    }
+
+    p {
+      line-height: 1.6;
+    }
+
+    a {
+      display: inline-block;
+      margin: 20px 0;
+      color: #fff;
+      background: #d2691e;
+      padding: 10px 20px;
+      text-decoration: none;
+      border-radius: 8px;
+      transition: background 0.3s ease;
+    }
+
+    a:hover {
+      background: #b85c1c;
+    }
+
+    .recipes-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+      margin-top: 20px;
+    }
+
+    .recipe-card {
+      background-color: #fffaf3;
+      border: 1px solid #e6d8c1;
+      border-radius: 12px;
+      padding: 20px;
+      text-align: left;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+      transition: transform 0.2s;
+    }
+
+    .recipe-card:hover {
+      transform: translateY(-5px);
+    }
+
+    ul {
+      padding-left: 20px;
+      margin: 0;
+    }
+
+    model-viewer {
+      width: 100%;
+      height: 400px;
+      margin: 20px 0;
+      background-color: #eee;
+      border-radius: 12px;
+    }
+
+    video {
+      border-radius: 10px;
+      margin-top: 20px;
+    }
+  </style>
 </head>
 <body>
-    <div class="container">
-        <h1>Descubre la Panela</h1>
-        <p>Conoce la historia, beneficios y recetas para disfrutar de la mejor manera este endulzante natural.</p>
-        
-        <div class="image-container">
-            <img src="https://source.unsplash.com/800x400/?sugarcane" alt="Caña de azúcar">
-        </div>
-        
-        <h2>📜 Historia y Beneficios</h2>
-        <p>La panela es un endulzante natural obtenido de la caña de azúcar. Es rica en minerales y más saludable que el azúcar refinado. Se elabora a través de un proceso artesanal que conserva sus nutrientes esenciales.</p>
-        
-        <div class="image-container">
-            <img src="https://source.unsplash.com/800x400/?panela" alt="Bloques de panela">
-        </div>
-        
-        <h2>🍽️ Recetas</h2>
-        
-        <div class="recipe">
-            <h3>🥤 Agua de Panela con Limón</h3>
-            <p><strong>Ingredientes:</strong></p>
-            <ul>
-                <li>1 litro de agua</li>
-                <li>100g de panela</li>
-                <li>Jugo de 1 limón</li>
-            </ul>
-            <p><strong>Preparación:</strong> Disuelve la panela en agua caliente, deja enfriar y añade el jugo de limón. Sirve con hielo.</p>
-        </div>
-        
-        <div class="recipe">
-            <h3>🍪 Galletas de Panela</h3>
-            <p><strong>Ingredientes:</strong></p>
-            <ul>
-                <li>200g de harina</li>
-                <li>100g de mantequilla</li>
-                <li>100g de panela rallada</li>
-                <li>1 huevo</li>
-            </ul>
-            <p><strong>Preparación:</strong> Mezcla los ingredientes hasta obtener una masa homogénea. Forma galletas y hornea a 180°C por 15 minutos.</p>
-        </div>
-        
-        <a href="#">Ver más recetas</a>
-        
-        <h2>🌍 Impacto Social y Ambiental</h2>
-        <p>Apoyamos a pequeños productores y fomentamos el consumo sostenible. La producción de panela genera empleo en zonas rurales y promueve el comercio justo.</p>
-        
-        <h2>💡 Consejos de Consumo</h2>
-        <p>Almacena la panela en un lugar fresco y seco para conservar su calidad. Puedes rallarla, disolverla en agua caliente o utilizarla como endulzante natural en diversas preparaciones.</p>
+  <div class="container">
+    <h1>Descubre la Panela - ROSSE</h1>
+    <p>Conoce la historia, beneficios y recetas para disfrutar de la mejor manera este endulzante natural.</p>
+
+    <h2>📜 Historia y Beneficios</h2>
+    <p>La panela es un endulzante natural obtenido de la caña de azúcar. Es rica en minerales y más saludable que el azúcar refinado.</p>
+
+    <h2>🍽️ Recetas con Panela</h2>
+    <div class="recipes-grid">
+      <div class="recipe-card">
+        <h3>🥤 Agua de Panela con Limón</h3>
+        <p><strong>Ingredientes:</strong></p>
+        <ul>
+          <li>1 litro de agua</li>
+          <li>100g de panela</li>
+          <li>Jugo de 1 limón</li>
+        </ul>
+        <p><strong>Preparación:</strong> Disuelve la panela en agua caliente, deja enfriar y añade el jugo de limón. Sirve con hielo.</p>
+      </div>
+
+      <div class="recipe-card">
+        <h3>🍪 Galletas de Panela</h3>
+        <p><strong>Ingredientes:</strong></p>
+        <ul>
+          <li>200g de harina</li>
+          <li>100g de mantequilla</li>
+          <li>100g de panela rallada</li>
+          <li>1 huevo</li>
+        </ul>
+        <p><strong>Preparación:</strong> Mezcla los ingredientes, forma galletas y hornea a 180°C por 15 minutos.</p>
+      </div>
+
+      <div class="recipe-card">
+        <h3>🍰 Torta de Panela</h3>
+        <p><strong>Ingredientes:</strong></p>
+        <ul>
+          <li>300g de harina</li>
+          <li>200g de panela</li>
+          <li>2 huevos</li>
+          <li>1 taza de leche</li>
+          <li>1 cdita de polvo de hornear</li>
+        </ul>
+        <p><strong>Preparación:</strong> Mezcla todos los ingredientes, vierte en un molde y hornea a 180°C por 35 minutos.</p>
+      </div>
+
+      <div class="recipe-card">
+        <h3>☕ Café con Panela</h3>
+        <p><strong>Ingredientes:</strong></p>
+        <ul>
+          <li>1 taza de café negro</li>
+          <li>1 cda de panela rallada</li>
+        </ul>
+        <p><strong>Preparación:</strong> Endulza tu café caliente con panela rallada. Ideal para las mañanas.</p>
+      </div>
+
+      <div class="recipe-card">
+        <h3>🥣 Avena con Panela</h3>
+        <p><strong>Ingredientes:</strong></p>
+        <ul>
+          <li>1 taza de avena en hojuelas</li>
+          <li>500 ml de agua</li>
+          <li>50g de panela</li>
+          <li>Canela al gusto</li>
+        </ul>
+        <p><strong>Preparación:</strong> Cocina la avena con el agua, añade la panela y la canela. Cocina a fuego lento hasta espesar.</p>
+      </div>
+
+      <div class="recipe-card">
+        <h3>🍮 Natilla Artesanal con Panela</h3>
+        <p><strong>Ingredientes:</strong></p>
+        <ul>
+          <li>1 litro de leche</li>
+          <li>200g de panela</li>
+          <li>1 rama de canela</li>
+          <li>100g de maicena</li>
+        </ul>
+        <p><strong>Preparación:</strong> Disuelve la panela en leche caliente con canela. Agrega la maicena disuelta y revuelve hasta espesar.</p>
+      </div>
     </div>
+
+    <a href="#">Ver más recetas</a>
+
+    <h2>🌍 Impacto Social y Ambiental</h2>
+    <p>Apoyamos a pequeños productores y fomentamos el consumo sostenible.</p>
+
+    <h2>🔬 Realidad Aumentada - Proceso de Producción</h2>
+    <model-viewer src="modelos/panela.glb" alt="Modelo 3D de la panela" auto-rotate camera-controls ar></model-viewer>
+    <p>Toca el modelo para verlo en realidad aumentada.</p>
+
+    <h2>🎥 Video Explicativo</h2>
+    <video controls width="100%">
+      <source src="videos/proceso_panela.mp4" type="video/mp4">
+      Tu navegador no soporta la reproducción de video.
+    </video>
+  </div>
 </body>
 </html>
+
